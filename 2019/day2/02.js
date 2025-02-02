@@ -27,7 +27,13 @@ const sprint = (code, instructionPointer) => {
   }
 };
 
-const part1 = sprint(code, 0);
+const part1 = (code) => {
+  code[1] = 12
+  code[2] = 2
+  return sprint(code, 0);
+}
+
+console.log(part1(code));
 
 const desiredOutput = (code) => {
   for (let i = 0; i < 100; i++) {
