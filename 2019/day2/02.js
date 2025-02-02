@@ -30,7 +30,7 @@ const sprint = (code, instructionPointer) => {
 const part1 = (code) => {
   code[1] = 12
   code[2] = 2
-  return sprint(code, 0);
+  return sprint(code, 0)[0];
 }
 
 console.log(part1(code));
